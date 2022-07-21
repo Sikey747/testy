@@ -1,0 +1,131 @@
+/*
+
+write your code here
+
+tm-flex-center      --- Выравнивание обекта по центу
+p-5                 --- Паддинг для текта 3 рем
+tm-bg-color-primary --- Основной цвет фона
+tm-section-min-h    --- Задавание минимально высоты блоку
+row tm-section      --- строка карточки
+
+
+*/
+.tm-bg-color-primary{
+  background-color: #76cdd8;
+}
+
+.tm-col-md-reverse {
+  flex-direction: row-reverse;
+}
+
+.tm-text-color-primary{
+  color: #76cdd8;
+}
+
+.btn-primary{
+  background-color: #019999;
+  border: none;
+}
+
+.tm-bg-color-secondary{
+  background-color: #019999;
+}
+
+.btn-secondary{
+  background-color: #019999;
+  border: none;
+}
+
+.tm-pricing-table{
+  border: #019999 1px solid;
+}
+
+.tm-form-header{
+  background-color: #23d4d4;
+}
+
+.tm-mb-30{
+  margin-bottom: 30px;
+}
+
+.tm-contact-form{
+  margin-top: -50px;
+  margin-bottom: -50px;
+  z-index: 1;
+}
+
+.tm-quote:hover{
+color: #76cdd8;
+}
+
+.img-fluid:hover{
+  transition: all linear 1ms;
+  transform: scale(1.1);
+}
+
+.btn-primary:hover{
+  background-color: rgb(118, 205, 216);
+}
+
+.tm-pricing-table:hover{
+ box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.btn-secondary:hover{
+  background: #24d4d4;
+}
+
+.tm-pricing-discount__star{
+  color: red;
+}
+
+.tm-pricing-discount__text{
+  color: #76cdd8;
+}
+/*только когда на клас таблицы наводится мышка значение в класе дисконт меняется*/
+.tm-pricing-table:hover .tm-pricing-discount{
+  display: block;
+}
+
+.form-control:focus{
+  border-color: #24d4d4; box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+.tm-flex-center{
+  position: relative;
+}
+
+.row .tm-flex-center > .tm-quote::after{
+  /*display: none;*/
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0px;
+  right: -15px;
+  border-top: 100px solid #76cdd8;
+  border-left: 100px solid transparent;
+}
+
+.row.tm-section.tm-card.tm-col-md-reverse .tm-quote::before{
+  /*display: none;*/
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0px;
+  right: 455px;
+  border-top: 100px solid #76cdd8;
+  border-right: 100px solid transparent;
+}
+
+.row .tm-flex-center >.tm-quote:hover::after {
+ display: block;
+}
+
+.row.tm-section.tm-card.tm-col-md-reverse .tm-quote:hover::before  {
+  display: block;
+}
+
+.tm-md-flex-center{
+  position: relative;
+}
